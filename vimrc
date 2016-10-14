@@ -3,6 +3,9 @@
 filetype off
 call pathogen#infect()
 
+" set the encoding
+set encoding=utf-8
+
 " highlight the current line and column
 set cursorline
 set cursorcolumn
@@ -19,7 +22,13 @@ imap jk <Esc>
 " make the spacebar good for something
 map <space> :
 
-" really handy when working with splits
+" split navigations: e.g. Ctrl-J to move to the split below
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" split maximisation toggle Ctrl-W o
 nnoremap <C-W>o :call MaximizeToggle()<CR>
 function! MaximizeToggle()
   if exists("s:maximize_session")
