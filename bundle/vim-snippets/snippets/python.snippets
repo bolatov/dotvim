@@ -216,27 +216,20 @@ snippet lc
 	logger.critical(${0:msg})
 snippet li
 	logger.info(${0:msg})
-snippet epydoc
-	"""${1:Description}
-
-	@param ${2:param}: ${3: Description}
-	@type  $2: ${4: Type}
-
-	@return: ${5: Description}
-	@rtype : ${6: Type}
-
-	@raise e: ${0: Description}
-	"""
 snippet dol
 	def ${1:__init__}(self, *args, **kwargs):
 	    super(${0:ClassName}, self).$1(*args, **kwargs)
-snippet kwg
-	self.${1:var_name} = kwargs.get('$1', ${2:None})
-snippet lkwg
-	${1:var_name} = kwargs.get('$1', ${2:None})
-snippet args
-	*args${1:,}${0}
-snippet kwargs
-	**kwargs${1:,}${0}
-snippet akw
-	*args, **kwargs${1:,}${0}
+snippet argparse
+	import argparse
+	from argparse import RawTextHelpFormatter
+
+	HELP_STR = """
+	"""
+
+	if __name__ == '__main__':
+	    parser = argparse.ArgumentParser(description=HELP_STR,
+					     formatter_class=RawTextHelpFormatter)
+	    parser.add_argument('--${0:param}',
+				type=${1:int},
+				required=True)
+	    args = parser.parse_args()
