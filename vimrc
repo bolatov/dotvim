@@ -7,6 +7,8 @@ call pathogen#infect()
 set cursorline
 set cursorcolumn
 
+" show coords of cursor in the status bar
+set ruler
 syntax on                           " syntax highlighing
 filetype on                          " try to detect filetypes
 filetype plugin on
@@ -43,4 +45,4 @@ augroup BgHighlight
 augroup END
 
 " mapping to run flake8 against current buffer
-autocmd FileType python map <buffer> fl :call Flake8()<CR>
+autocmd FileType python map <buffer> <F7> :call Flake8()<CR>
