@@ -8,7 +8,6 @@ set encoding=utf-8
 
 " highlight the current line and column
 set cursorline
-set cursorcolumn
 
 " show coords of cursor in the status bar
 set ruler
