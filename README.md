@@ -3,6 +3,8 @@ Installation
 `git clone <repo>`, then `ln -s dotvim .vim`.
 the `vimrc` file is loaded when Vim starts.  To see the order in which configuration files are read, run vim --version.
 
+You may also want to link to the inputrc file to get a compatible readline setup `ln -s dotvim/inputrc .inputrc`.
+
 Pathogen
 ========
 in the autoload subdir is pathogen.  pathogen loads all the plugins in the bundle subdir.
