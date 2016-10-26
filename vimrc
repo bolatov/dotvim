@@ -54,3 +54,6 @@ augroup END
 
 " mapping to run flake8 against current buffer
 autocmd FileType python map <buffer> <F7> :call Flake8()<CR>
+
+" set number of lines to maintain between cursor and top/bottom of window
+set scrolloff=5
