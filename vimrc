@@ -57,3 +57,9 @@ autocmd FileType python map <buffer> <F7> :call Flake8()<CR>
 
 " set number of lines to maintain between cursor and top/bottom of window
 set scrolloff=5
+
+"standardise the colour scheme
+colorscheme elflord
+
+" PHP files use four space indentation
+autocmd FileType php setlocal sts=4 ts=4 sw=4 expandtab
