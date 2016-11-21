@@ -12,9 +12,15 @@ set cursorline
 " show coords of cursor in the status bar
 set ruler
 syntax on                           " syntax highlighing
+autocmd! bufreadpost *.md set syntax=off " turn it off for markdown files, since it works poorly
 filetype on                          " try to detect filetypes
 filetype plugin on
 filetype plugin indent on    " enable loading indent file for filetype
+
+" html, css, js indentation
+autocmd FileType html setlocal shiftwidth=4 tabstop=4
+autocmd FileType css setlocal shiftwidth=4 tabstop=4
+autocmd FileType js setlocal shiftwidth=4 tabstop=4
 
 " can exit insert mode without leaving the 'home row' of the keyboard
 imap jk <Esc>
