@@ -22,7 +22,7 @@ autocmd FileType css setlocal shiftwidth=4 tabstop=4
 autocmd FileType js setlocal shiftwidth=4 tabstop=4
 
 " highlight the current line and column
-" turn off cursorline for text and markdown, get annoying
+" turn off cursorline for text and markdown, as it impedes reading!
 set cursorline
 autocmd BufRead,BufNewFile *.md setlocal nocursorline
 autocmd BufRead,BufNewFile *.txt setlocal nocursorline
