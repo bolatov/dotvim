@@ -19,7 +19,7 @@ filetype plugin indent on    " enable loading indent file for filetype
 " html, css, js indentation
 autocmd FileType html setlocal shiftwidth=4 tabstop=4
 autocmd FileType css setlocal shiftwidth=4 tabstop=4
-autocmd FileType js setlocal shiftwidth=4 tabstop=4
+autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
 
 " c
 autocmd FileType c setlocal shiftwidth=2 tabstop=2
