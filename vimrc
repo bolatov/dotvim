@@ -77,3 +77,6 @@ colorscheme elflord
 
 " PHP files use four space indentation
 autocmd FileType php setlocal sts=4 ts=4 sw=4 expandtab
+
+" C++ files use four space indentation
+autocmd FileType cpp setlocal shiftwidth=4 tabstop=4 expandtab
