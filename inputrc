@@ -1,5 +1,11 @@
 set editing-mode vi
 set keymap vi-insert
+# the following change the cursor depending on which vi mode we're in (in bash, requires version >= 4.4)
+# for more cursor options, see https://stackoverflow.com/questions/7888387/the-way-to-distinguish-command-mode-and-insert-mode-in-bashs-vi-command-line-ed
+set show-mode-in-prompt on
+set vi-ins-mode-string \1\e[2 q\2
+set vi-cmd-mode-string \1\e[6 q\2
+
 "jk": vi-movement-mode
 "\C-p": history-search-backward
 "\C-x\C-e": edit-and-execute-command
