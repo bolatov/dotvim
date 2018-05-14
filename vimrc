@@ -29,6 +29,7 @@ autocmd FileType c setlocal shiftwidth=2 tabstop=2
 set cursorline
 autocmd BufRead,BufNewFile *.md setlocal nocursorline
 autocmd BufRead,BufNewFile *.txt setlocal nocursorline
+autocmd BufRead,BufNewFile *.tex setlocal nocursorline
 
 " can exit insert mode without leaving the 'home row' of the keyboard
 imap jk <Esc>
@@ -80,3 +81,7 @@ autocmd FileType php setlocal sts=4 ts=4 sw=4 expandtab
 
 " C++ files use four space indentation
 autocmd FileType cpp setlocal shiftwidth=4 tabstop=4 expandtab
+
+" don't use a background color when highlighting matching parantheses, since
+" otherwise it's hard to see where the cursor is
+hi MatchParen cterm=none ctermbg=none ctermfg=green
