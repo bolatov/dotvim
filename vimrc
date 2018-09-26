@@ -42,6 +42,10 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" More natural split opening
+set splitbelow
+set splitright
+
 " split maximisation toggle Ctrl-W o
 nnoremap <C-W>o :call MaximizeToggle()<CR>
 function! MaximizeToggle()
